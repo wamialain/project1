@@ -1,0 +1,7 @@
+-host: all
+become: yes
+tasks:
+ -name: install http
+ yum:
+  name: httpd
+  state: started 
